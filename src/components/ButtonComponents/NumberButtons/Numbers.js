@@ -14,9 +14,12 @@ const Numbers = () => {
   return (
     <div className='numContainer'>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
-       component matching the name on the provided file. Pass
-       it any props needed by the child component*/}
-      {number.map(number => <div key={number}><NumberButton numberProp={number} clickNumberProp={clickNumber} /></div>)}
+        component matching the name on the provided file. Pass
+        it any props needed by the child component*/}
+      {number.map(number => 
+        <div key={number}>
+          <NumberButton numberProp={number} clickNumberProp={clickNumber} />
+        </div>)}
     </div>
   );
 };
