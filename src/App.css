@@ -58,7 +58,7 @@ button:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 8% 6.5%;
+    margin: 8% 6.5% 3% 6.5%;
 }
 .specAndNum {
     max-width: 75%;

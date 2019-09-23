@@ -10,6 +10,7 @@ const Operators = () => {
   // STEP 2 - add the imported data to state
   const [operator, setOperator] = useState(operators)
   const clickOperator = (operator) => {
+    console.log(`${operator} button clicked`)
   }
   return (
     <div className="operatorContainer">

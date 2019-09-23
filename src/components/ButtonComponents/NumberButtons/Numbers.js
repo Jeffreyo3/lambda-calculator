@@ -10,6 +10,7 @@ const Numbers = () => {
   // STEP 2 - add the imported data to state
   const [number, setNumber] = useState(numbers)
   const clickNumber = (number) => {
+    console.log(`${number} button clicked`)
   }
   return (
     <div className='numContainer'>

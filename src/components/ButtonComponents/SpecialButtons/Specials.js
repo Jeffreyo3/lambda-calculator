@@ -10,6 +10,7 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
   const [special, setSpecial] = useState(specials)
   const clickSpecial = (special) => {
+    console.log(`${special} button clicked`)
   }
   return (
     <div className="specialContainer">
