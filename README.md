@@ -98,7 +98,7 @@ This is where you're JavaScript skills are really going to be stretched. Remembe
 ## _MVP Requirements:_
 
 - Get at least one set of buttons(numbers, operators, or special buttons) to reflect the design spec.
-- Use the state hook function to get the app to display some data.
+- Use the state hook function to get the app to display some data. 
 
 **Here is your design spec:**
 
