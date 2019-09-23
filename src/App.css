@@ -6,10 +6,20 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+h1 {
+    font-size: 48px;
+    font-weight: normal;
+    text-align: right;
+    margin: auto 4% auto auto;
+}  
+.logo-container {
+    max-width: 120px;
+    margin: 8% auto 0 8%;
+}
 .display {
     margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 420px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -17,6 +27,66 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+button {
+    /* width: 80px; */
+    width: 90px;
+    height: 90px;
+    /* margin: 10%; */
+    margin: 13.5px;
+    /* padding: 21px 10px; */
+    border-radius: 50px;
+    box-shadow: 0px 4px #420208;
+    color: #FFF;
+    border: none;
+    font-size: 36px;
+}
+button:hover {
+    filter: brightness(120%);
+}
+button:active {
+    box-shadow: 0px 0px;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mathButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 8% 6.5%;
+}
+.specAndNum {
+    max-width: 75%;
+}
+.specialContainer {
+    display: flex;
+}
+.numContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.operatorContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.numbersButton{
+    background: #113C78;
+}
+.specialButton{
+    background: #2160B0;
+}
+.operatorButton{
+    background: #3DB5E5;
+}
+
+.numbersButton:nth-child(9){
+    width: 190px;
+}
