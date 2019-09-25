@@ -6,12 +6,9 @@ import Display from "../../../components/DisplayComponents/Display";
 //Import your array data to from the provided data file
 import { numbers } from '../../../data.js';
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
-  const [numberState, setNumber] = useState(numbers)
-  const clickNumber = (numberState) => {
-    console.log(`${numberState} button clicked`)
-  }
+  const [numberState] = useState(numbers);
   return (
     <div className='numContainer'>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
@@ -19,7 +16,7 @@ const Numbers = () => {
         it any props needed by the child component*/}
       {numberState.map(numberState => 
         <div key={numberState}>
-          <NumberButton numberProp={numberState} clickNumberProp={clickNumber} />
+          <NumberButton numberProp={numberState} clickNumberProp={props.clickNumber} />
         </div>)}
     </div>
   );
