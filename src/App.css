@@ -77,9 +77,14 @@ button:active {
 
 
 
-.numbersButton{
+.numberButton{
     background: #113C78;
+    /* background: red; */
 }
+.zeroButton {
+    width: 208px;
+}
+
 .specialButton{
     background: #2160B0;
 }
@@ -87,6 +92,3 @@ button:active {
     background: #3DB5E5;
 }
 
-.numbersButton:nth-child(9){
-    width: 190px;
-}
