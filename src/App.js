@@ -27,6 +27,10 @@ function App() {
     console.log("button clicked", specialState);
     setDisplayState(specialState);
   }
+  const clickOperator = (operatorState) => {
+    console.log("button clicked", operatorState);
+    setDisplayState(operatorState);
+  }
   
   return (
     <div className="container">
@@ -38,7 +42,7 @@ function App() {
             <Specials clickSpecial={clickSpecial}/>
             <Numbers clickNumber={clickNumber}/>
           </div>
-          <Operators />
+          <Operators clickOperator={clickOperator}/>
         </div>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
