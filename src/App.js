@@ -23,6 +23,10 @@ function App() {
     console.log("button clicked", numberState);
     setDisplayState(numberState);
   }
+  const clickSpecial = (specialState) => {
+    console.log("button clicked", specialState);
+    setDisplayState(specialState);
+  }
   
   return (
     <div className="container">
@@ -31,7 +35,7 @@ function App() {
         <Display displayState={displayState}/>
         <div className="mathButtons">
           <div className="specAndNum">
-            <Specials />
+            <Specials clickSpecial={clickSpecial}/>
             <Numbers clickNumber={clickNumber}/>
           </div>
           <Operators />
